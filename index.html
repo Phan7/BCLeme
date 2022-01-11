@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <title>BCLeme</title>
+</head>
+<!--  
+______  _____  _                            ______ _             
+| ___ \/  __ \| |                           | ___ \ |            
+| |_/ /| /  \/| |     ___ _ __ ___   ___    | |_/ / | __ _ _   _ 
+| ___ \| |    | |    / _ \ '_ ` _ \ / _ \   |  __/| |/ _` | | | |
+| |_/ /| \__/\| |___|  __/ | | | | |  __/   | |   | | (_| | |_| |
+\____/  \____/\_____/\___|_| |_| |_|\___|   \_|   |_|\__,_|\__, |
+                                                            __/ |
+                                                           |___/ 
+ -->
+<body>
+    <div id="logoContainer">
+        <img src="logo.png" alt="logo.png" id="logo">
+    </div>
+    <h1>Bem vindo ao<br><i>BCLeme Play</i></h1>
+    <h2>Este site foi desenvolvido em parceria com o colégio Bom Começo e Leme</h2>
+    <h2>O site tem o intuito de funcionar em conjunto com o jogo de tabuleiro impresso, desenvolvido pelos alunos do 1° ano do Ensino Médio</h2>
+    <hr>
+    <h2>Para jogar, escolha a quantidade de jogadores e clique em <i>Criar Novo Jogo</i></h2>
+    <h2>Quantos Jogadores?</h2>
+    <div id="input">
+        <button class="playersBtn" onclick=rmPlayer()>-</button>
+        <h1 id="amountPlayers">2</h1>
+        <button class="playersBtn" onclick=addPlayer()>+</button>
+    </div>
+    <div id="newGameContainer">
+        <button id="newGameBtn" onclick=newGame()>Criar Novo Jogo</button>
+    </div>
+    <hr>
+    <div id="backContainer">
+        <button id="backBtn" onclick="window.location.href=window.origin + '/help.html'">Ajuda</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
